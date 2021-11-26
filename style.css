@@ -1,0 +1,149 @@
+:root {
+  --dark: #55423d;
+  --light: #ffc0ad;
+  --hover: #e78fb3;
+  --medium: #bd715c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: var(--light);
+  z-index: -1;
+}
+
+nav {
+  background-color: var(--dark);
+  position: fixed;
+  width: 100%;
+}
+.navlinks li a {
+  color: var(--light);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+.navlinks li a:hover {
+  color: var(--hover);
+}
+.navlinks ul li {
+  border: 1px solid var(--light);
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+.navlinks ul {
+  list-style: none;
+}
+.navlinks ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 65px;
+}
+
+/* section digital clock */
+
+#clock {
+  height: 100vh;
+  width: 100%;
+  padding-top: 70px;
+}
+.clock-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.clock-content h1 {
+  font-size: 5rem;
+
+  border: 5px solid var(--dark);
+  border-radius: 10px;
+  padding: 1em 1em;
+}
+
+/* section arrays */
+
+#arrays {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--medium);
+  padding-top: 70px;
+}
+
+#arrays {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.arrays-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  font-size: 2rem;
+
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 1em 1em;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.btn {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  font-size: large;
+}
+
+#displayArray {
+  border: 3px solid white;
+  border-radius: 10px;
+  padding: 1em 1em;
+  color:white;
+}
+
+/* section advanced functions */
+#ad-functions {
+  height: 100vh;
+  width: 100%;
+  padding-top: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ad-functions-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+
+
+.inputnum, .calButtons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#result{
+    border: 3px solid var(--dark);
+    border-radius: 10px;
+    padding: 1em 1em;
+}

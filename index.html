@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav>
+        <div class="navlinks">
+          <ul>
+            <li><a href="#clock">Digital Clock</a></li>
+            <li><a href="#arrays">Array Push</a></li>
+            <li><a href="#ad-functions">Advanced Functions</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- section digital clock  -->
+      <section id="clock">
+        <div class="clock-content">
+          <h1 id="timer"></h1>
+        </div>
+      </section>
+
+      <!-- section arrays  -->
+      <section id="arrays">
+        <div class="arrays-content">
+          <input id="uname" type="text" placeholder="Enter Username" />
+          <input id="email" type="text" placeholder="Enter Email" />
+          <button class="btn" onclick="addInfo()">Sign Up</button>
+        </div>
+
+        <!-- array display section -->
+        <!-- pre is used instead of div -- coz data is converted to JSON format in script.js -- for prettier JSON display use PRE instead of DIV -->
+        <pre id="displayArray">Array Contents</pre>
+      </section>
+
+      <!-- section advanced functions  -->
+      <section id="ad-functions">
+        <div class="ad-functions-content">
+          <div class="inputnum">
+            <input id="num1" type="number" placeholder="Enter first number" />
+            <input id="num2" type="number" placeholder="Enter second number" />
+          </div>
+          <div class="calButtons">
+            <button class="btn" onclick="addNum()">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </button>
+            <button class="btn" onclick="subNum()">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </button>
+            <button class="btn" onclick="mulNum()">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </button>
+            <button class="btn" onclick="divNum()">
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </button>
+          </div>
+
+          <div id="result">Result diplayed here</div>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
