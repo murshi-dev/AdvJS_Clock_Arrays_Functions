@@ -8,15 +8,21 @@ function calTime() {
   let min = time.getMinutes();
   let sec = time.getSeconds();
   //ceeate a var to display am pm
-  let am_pm = "";
+  if (hour > 12) {
+    hour -= 12;
+    am_pm = "PM";
+}
+if (hour == 0) {
+    hr = 12;
+    am_pm = "AM";
+}
 
   //prefix zero in hour min and sec values if values less than 10
   hour = hour < 10 ? "0" + hour : hour;
   min = min < 10 ? "0" + min : min;
   sec = sec < 10 ? "0" + sec : sec;
 
-  //since hours is in 24hrs by default, check with value 12 to decide am or pm
-  am_pm = hour < 12 ? "AM" : "PM";
+ 
 
   let timeNow = hour + ":" + min + ":" + sec + am_pm;
 
